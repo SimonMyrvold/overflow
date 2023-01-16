@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>p5.js Pathfinding</title>
+        <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+        <script src="sketch.js"></script>
+        <script src="square.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    </head>
+    <h1>A* Pathfinding w/ p5.js</h1>
+    <div id="main">
+        <div class="result success">
+            <p id="successResultP">&nbsp;</p>
+        </div>
+        <div class="result failure">
+            <p id="failureResultP"></p>
+        </div>
+        <div id="canvasContainer"></div>
+        <div id="tools">
+            <h2>Tools Section</h2>
+            <!-- <div class="pretty p-switch p-fill">
+                <input id="allowDiagonals" type="checkbox" />
+                <div class="state p-success">
+                    <label>Allow Diagonals</label>
+                </div>
+            </div> -->
+            <button class="startBtn" onClick="startPathfinding();">Start</button>
+            <button class="clearBtn" onClick="clearPathfinding();">Clear</button>
+        </div>
+    </div>
+
+</html>
